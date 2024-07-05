@@ -4,6 +4,8 @@ Welcome my collection of demos and intros, developed between 1995-1997.
 
 Back in those days, I've started to grew an interest for low level graphics programming. In 1995, university got internet and in that year, I've spent nights there scouring FTPs for graphic programming tutorials. While I eventually got to be good at it, demos also required music and I was absolutely dreadful at audio programming. Initial attempts at writing a mod player following docs didn't go very well and had to find ready-made mod players. This is why music integration/syncronization with the effects is virtually non-existent.
 
+Running the precompiled binaries require MS-DOS or emulator (DOSBox, FreeDOS, etc). If running in DOSBox, use cpu cycles in the 10-15k range (CTRL+F12)
+
 You'll find below a detailed list of them and a brief story for each one, as much as I can remember.
 
 ## Amorphis
@@ -19,11 +21,11 @@ Title is a nod to one of my favorite metal bands of the 90s, Amorphis.
 
 This one comes with a credit to my late graphics programming teacher at university, Mr Sorin Babii (PhD). Rest in pixels.
 
-[Amorphis Title](./media/amorphis-title.gif)
-[Amorphis Tunnel](./media/amorphis-tunnel.gif)
-[Amorphis Moire Pattern](./media/amorphis-moire-pattern.gif)
-[Amorphis Voxels](./media/amorphis-voxels.gif)
-[Amorphis Tornado](./media/amorphis-tornado.gif)
+[Amorphis Title](.media/amorphis-title.gif)
+[Amorphis Tunnel](.media/amorphis-tunnel.gif)
+[Amorphis Moire Pattern](.media/amorphis-moire-pattern.gif)
+[Amorphis Voxels](.media/amorphis-voxels.gif)
+[Amorphis Tornado](.media/amorphis-tornado.gif)
 
 ## Iced
 It's a 16k demo made in 1996, featuring a mix of 2D and 3D. The highlight is almost real-time ray tracing: it pre-renders a couple of animation frames in memory, hence "almost". Still pretty cool for 16k.
@@ -34,15 +36,15 @@ Credits shoud've been at the end and skippable. Bad UX ;)
 
 Executable was obfuscated using a tool called Gardian Angel. Why? Smart kids use protection ;)
 
-[ICED Raytracing](./iced-raytracing.gif)
-[ICED Rose](./iced-rose.gif)
+[ICED Raytracing](.media/iced-raytracing.gif)
+[ICED Rose](.media/iced-rose.gif)
 
 ## Compile
 My first demo, showing off a combination of 2D and 3D effects, all pretty standard. Developed in February-March 1996 on a 386-DX40 (heh)
 
 Badly lacks art and direction, but at least you can use ESC to skip through scenes. Whew. Good UX.
 
-[Compile Sailing](./compile-sailing.gif)
+[Compile Sailing](.media/compile-sailing.gif)
 
 ## Mercury Wind
 A tiny intro for Traian Pop's birthday, features an animated fractal tree. Coded in an afternoon.
@@ -59,15 +61,15 @@ Intro/gifts for my father to use as screensavers at his workplace, Petroconst, i
 
 Snow features a pixel snow effect, Scroll Balls a 3D scrolling effect, both used in Compile.
 
-[Scroll Balls Intro](./media/scrollballs.gif)
-[Snow Intro](./media/snow.gif)
+[Scroll Balls Intro](.media/scrollballs.gif)
+[Snow Intro](.media/snow.gif)
 
 ## Torent
 Beach themed intro for a BBS that was running in my hometowm, Constanta in 1997. Not sure if the sysop ended up using it. Or if the BBS ever went online.
 
 Effect is from Amorphis.
 
-[Torent Intro](./media/torent.gif)
+[Torent Intro](.media/torent.gif)
 
 ## XTest
 A tester for various extended VESA graphics modes, featuring a bump map with real-time illumination and a 2D pallete effect. Made as a showcase for a lab at university.
