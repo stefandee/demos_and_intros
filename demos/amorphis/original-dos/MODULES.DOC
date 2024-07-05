@@ -1,0 +1,73 @@
+
+  MODULES.TPU
+
+  MODule playing routines.
+  Based on TINY MOD v0.1b by Carlos Hasan, (C) 1993.
+  Supplemented and recoded for PASCAL by TSC-Software, 1995.
+
+  --------------------------------------------------------------------------
+
+  This library was designed for playing AMIGA MOD-files within TURBO PASCAL.
+  You are able to load  several MODules into mem and play  them any time you
+  want to. Soundblaster or 10000000000% compatible is needed. 80286 CPU too.
+
+  The following data and procedures are defined as public:
+
+
+  Const
+   MixSpeed: Word = 41000;   { INT 8 will call the sound calculating routine }
+			     { at least MixSpeed/1024 times per second.	     }
+
+   MidCRate: Word =  8448;   { C-2 frequency				     }
+
+   DefTempo: Byte =     6;
+
+   DefBpm:   Byte =   125;   { Speed of MODule (in beats per minute)	     }
+
+
+  Type
+   MODDataRec     = ^ModInfoRec;    { Module information resources           }
+   ModInfoRec     = Record
+    OrderLen:     Byte;
+    ReStart:      Byte;
+    Order:        Array[1..128] Of Byte;
+    Patterns:     Pointer;
+    SampOfs:      Array[1..31] Of Word;
+    SampSeg:      Array[1..31] Of Word;
+    SampLen:      Array[1..31] Of Word;
+    SampRep:      Array[1..31] Of Word;
+    SampRepLen:   Array[1..31] Of Word;
+    SampVol:      Array[1..31] Of Word;
+    PatSize:      Word;
+   End;
+
+  Var
+   ErrorInfo:     Byte;	   { 0 = OK, 1 = Error				   }
+   OrderPos:      Byte;    { Current order to be played			   }
+   Row:           Byte;    { Current row (1..64) of order		   }
+
+
+  Procedure LoadMOD(FName: String; FSeek: LongInt; Var MODData: MODDataRec);
+  { Loads a module from file "FName" at position "FSeek" into memory.      }
+  { This procedure allocates PASCAL-memory only! The MODule itself and the }
+  { information about it must fit into mem, or the program terminates with }
+  { a runtime error.							   }
+
+  Procedure FreeMOD(Var MODData: MODDataRec);
+  { All memory taken by the MODule and information resources is released   }
+  { by this procedure. 							   }
+
+  Procedure PlayMOD(Var MODData: MODDataRec);
+  { Start playing of a specified MODule immediately. Don't set MixSpeed    }
+  { too high if you have a slow computer. And don't disable the interrupts }
+  { because you won't hear music anymore. It's not recommended to change   }
+  { any of the variables declared above during the playback.		   }
+
+  Procedure StopMOD;
+  { Stop the MODule currently played and shut down the Soundblaster device }
+
+
+  See the example MPLAY.PAS how to use the unit.  AVOID DOING STRANGE THINGS
+  DURING THE PLAYBACK BY ANY CHANCE (like causing runtime errors)! Make sure
+  that you've shut down the Soundblaster device before  exiting the program.
+

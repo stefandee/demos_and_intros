@@ -1,0 +1,33 @@
+    for i := 1 to MaxDragons do
+        with Dragons[i] do
+             if used
+                then begin
+                       inc(radius,5);
+                       if radius>160 then used := false;
+                       case radius of
+                         0..39  : begin
+                                    level := 9;
+                                    size  := 2;
+                                  end;
+                         40..79 : begin
+                                    level := 10;
+                                    size := 2;
+                                  end;
+                         80..120: begin
+                                    level := 11;
+                                    size := 2;
+                                  end;
+                       end;
+                       penangle := (penangle+10) mod 360;
+                       SetReper( 160+longint(radius)*longint(costab[penangle]) div 16384,
+                                 120+longint(radius)*longint(sintab[penangle]) div 16384);
+                       Angle := 360-penangle;
+                       PenColor := color;
+                       Dragon(size,level,1);
+                     end
+                else begin
+                       color := random(7)+249;
+                       radius := 0;
+                       penangle := Dragons[i-1].penangle+2;
+                       used := true;
+                     end;

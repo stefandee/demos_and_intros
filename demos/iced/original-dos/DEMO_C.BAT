@@ -1,0 +1,1 @@
+bcc -S -a demo.c

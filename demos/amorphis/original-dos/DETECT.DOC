@@ -1,0 +1,39 @@
+
+  DETECT.TPU
+
+  Soundblaster autodetect routine.
+  Based on TINY MOD v0.1b by Carlos Hasan, (C) 1993.
+  Supplemented and recoded for PASCAL by TSC-Software, 1995.
+
+  --------------------------------------------------------------------------
+
+  When you link this unit into your program, it will automaticly detect the
+  Soundblaster's base address, interrupt channel and DSP version as soon as
+  your program is being executed.
+
+  It defines the following interface data:
+
+
+  Const                              { CardType values }
+   NONE          = 0;
+   SB            = 1;
+   SBPRO         = 2;
+   SB16          = 3;
+
+  Type                               { nessecarry Soundblaster data }
+   SbDataRec     = Record
+    CardType:    Byte;               { type of SB card (s.a.)       }
+    DSPNum:      Word;               { version of DSP               }
+    SbAddr:      Word;               { base address                 }
+    SbIrq:       Word;               { irq channel                  }
+   End;
+
+  Var
+   SBData:       SBDataRec;
+
+
+  The units MODULES.TPU and VOCS.TPU need these data in their initialisation
+  routines. So make sure, that DETECT.TPU is available, if  you want to  use
+  one of these libraries.
+
+
