@@ -4,6 +4,8 @@ Welcome my collection of demos and intros, developed between 1995-1997.
 
 Back in those days, I've started to grew an interest for low level graphics programming. In 1995, university got internet and in that year, I've spent nights there scouring FTPs for graphic programming tutorials. While I eventually got to be good at it, demos also required music and I was absolutely dreadful at audio programming. Initial attempts at writing a mod player following docs didn't go very well and had to find ready-made mod players. This is why music integration/syncronization with the effects is virtually non-existent.
 
+With a little exception, all of these were coded in a mix of Pascal and x86 assembler. Music support is provided from external/pre-compiled libraries.
+
 Running the precompiled binaries require MS-DOS or emulator (DOSBox, FreeDOS, etc). If running in DOSBox, use cpu cycles in the 10-15k range (CTRL+F12)
 
 You'll find below a detailed list of them and a brief story for each one, as much as I can remember.
