@@ -54,14 +54,16 @@ A tiny intro for Traian Pop's birthday, features an animated fractal tree. Coded
 [Mercury Wind Intro](.media/mercury-wind.gif)
 
 ## Infelif
-Small intro made as a digital present for my father to use as a screen-saver at his workplace, Infelif. Made in 1996.
+Small intro made as a digital present for my father to use as a screen-saver at his workplace, InfELIF Constanta. Developed in the summer of 1994.
+
+InfELIF was the computer department of IELIF ("Intreprinderea pentru Exploatarea Lucrarilor de Imbunatatiri Funciare"), a Romanian state-own company which managed land improvement/reclamation projects. This included irigation, hence the cute pixel art water sprinklers sprinkling water in the intro :)
 
 [Infelif Intro](.media/infelif.gif)
 
 ## Scroll Balls and Snow
-Intro/gifts for my father to use as screensavers at his workplace, Petroconst, in 1997. 
+Intro/gifts for my father to use as screensavers at his workplace, Petroconst, in 1996. 
 
-Snow features a pixel snow effect, Scroll Balls a 3D scrolling effect, both used in Compile.
+Snow features a pixel snow effect, Scroll Balls a 3D scrolling effect, both developed previously for Compile demo.
 
 [Scroll Balls Intro](.media/scrollballs.gif)
 [Snow Intro](.media/snow.gif)
@@ -69,7 +71,7 @@ Snow features a pixel snow effect, Scroll Balls a 3D scrolling effect, both used
 ## Torent
 Beach themed intro for a BBS that was running in my hometowm, Constanta in 1997. Not sure if the sysop ended up using it. Or if the BBS ever went online.
 
-Effect is from Amorphis.
+Sand effect was previously developed in Amorphis.
 
 [Torent Intro](.media/torent.gif)
 
